@@ -1,0 +1,72 @@
+# Code owners of the protected paths (agent-ready standard v0, protected-path matrix).
+# Replace every @lucaskasprzyk with a real user or team before required code-owner review is switched
+# on. Where the agent writes under your own account this gate cannot act: GitHub does not let you
+# approve your own pull request, so protection there is the host hooks plus you reading the diff.
+# tests
+**/*.test.* @lucaskasprzyk
+**/*.spec.* @lucaskasprzyk
+**/*_test.* @lucaskasprzyk
+**/test_*.py @lucaskasprzyk
+**/test/** @lucaskasprzyk
+**/tests/** @lucaskasprzyk
+**/__tests__/** @lucaskasprzyk
+**/spec/** @lucaskasprzyk
+# snapshots / baselines
+**/__snapshots__/** @lucaskasprzyk
+**/*.snap @lucaskasprzyk
+**/baselines/** @lucaskasprzyk
+**/golden/** @lucaskasprzyk
+**/*.golden @lucaskasprzyk
+# evals
+evals/** @lucaskasprzyk
+# lint / type / build config
+**/.eslintrc* @lucaskasprzyk
+**/eslint.config.* @lucaskasprzyk
+**/.prettierrc* @lucaskasprzyk
+**/prettier.config.* @lucaskasprzyk
+**/biome.json @lucaskasprzyk
+**/biome.jsonc @lucaskasprzyk
+**/.stylelintrc* @lucaskasprzyk
+**/tsconfig*.json @lucaskasprzyk
+**/jsconfig.json @lucaskasprzyk
+**/babel.config.* @lucaskasprzyk
+**/.babelrc* @lucaskasprzyk
+**/vite.config.* @lucaskasprzyk
+**/vitest.config.* @lucaskasprzyk
+**/jest.config.* @lucaskasprzyk
+**/webpack.config.* @lucaskasprzyk
+**/rollup.config.* @lucaskasprzyk
+**/.editorconfig @lucaskasprzyk
+**/ruff.toml @lucaskasprzyk
+**/.ruff.toml @lucaskasprzyk
+**/mypy.ini @lucaskasprzyk
+**/.flake8 @lucaskasprzyk
+**/setup.cfg @lucaskasprzyk
+**/tox.ini @lucaskasprzyk
+**/pytest.ini @lucaskasprzyk
+**/.golangci.yml @lucaskasprzyk
+**/.golangci.yaml @lucaskasprzyk
+**/Makefile @lucaskasprzyk
+**/.pre-commit-config.yaml @lucaskasprzyk
+# generated and vendored trees
+vendor/** @lucaskasprzyk
+third_party/** @lucaskasprzyk
+node_modules/** @lucaskasprzyk
+dist/** @lucaskasprzyk
+build/** @lucaskasprzyk
+**/generated/** @lucaskasprzyk
+**/*.generated.* @lucaskasprzyk
+**/*.pb.go @lucaskasprzyk
+**/*_pb2.py @lucaskasprzyk
+**/package-lock.json @lucaskasprzyk
+**/pnpm-lock.yaml @lucaskasprzyk
+**/yarn.lock @lucaskasprzyk
+**/bun.lockb @lucaskasprzyk
+**/poetry.lock @lucaskasprzyk
+**/uv.lock @lucaskasprzyk
+**/go.sum @lucaskasprzyk
+**/Cargo.lock @lucaskasprzyk
+# workflows
+.github/workflows/** @lucaskasprzyk
+# CODEOWNERS itself
+**/CODEOWNERS @lucaskasprzyk

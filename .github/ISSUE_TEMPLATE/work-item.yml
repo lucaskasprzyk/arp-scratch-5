@@ -1,0 +1,62 @@
+# managed by agent-repo-prep
+name: Work item
+description: The one shape of a unit of work — a feature, a fix, a chore.
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What
+      description: What changes, in a few sentences.
+    validations:
+      required: true
+  - type: textarea
+    id: done-when
+    attributes:
+      label: Done when
+      description: Observable conditions that make this item done, one per line.
+    validations:
+      required: true
+  - type: textarea
+    id: spec
+    attributes:
+      label: Spec / context reference
+      description: Where the context lives — a spec section, an ADR, a link.
+    validations:
+      required: true
+  - type: textarea
+    id: out-of-scope
+    attributes:
+      label: Out of scope
+      description: What this item deliberately does not do.
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: The problem this item solves, if it is not obvious from What.
+  - type: textarea
+    id: decision
+    attributes:
+      label: Decision
+      description: The approach chosen.
+  - type: textarea
+    id: why
+    attributes:
+      label: Why
+      description: Why this approach.
+  - type: textarea
+    id: rejected
+    attributes:
+      label: Rejected
+      description: Alternatives considered and why they lost.
+  - type: textarea
+    id: demo
+    attributes:
+      label: Demo
+      description: How a human sees the result working.
+  - type: textarea
+    id: human-decisions
+    attributes:
+      label: Human decisions
+      description: Decisions only a human may make or confirm in this item.
