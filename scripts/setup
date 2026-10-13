@@ -5,13 +5,11 @@ set -euo pipefail
 cd "$(dirname "$0")/.."
 
 install_deps() {
-  echo "scripts/setup: no install step defined yet — edit scripts/setup" >&2
-  return 1
+  echo "scripts/setup: nothing to install (scratch repository)"
 }
 
 run_verify() {
-  echo "scripts/setup: no verify command defined yet — edit scripts/setup" >&2
-  return 1
+  test -f AGENTS.md && echo "scripts/setup: verify ok"
 }
 
 install_deps
